@@ -1,0 +1,23 @@
+Pig Stack Trace
+---------------
+ERROR 1200: <file C:\Users\U-19\Desktop\FILE DI INSTALLAZIONE\ApacheSpark\ScriptPigLatin.pig, line 1, column 30>  Unexpected character 'D'
+
+org.apache.pig.impl.logicalLayer.FrontendException: ERROR 1000: Error during parsing. <file C:\Users\U-19\Desktop\FILE DI INSTALLAZIONE\ApacheSpark\ScriptPigLatin.pig, line 1, column 30>  Unexpected character 'D'
+	at org.apache.pig.PigServer$Graph.parseQuery(PigServer.java:1833)
+	at org.apache.pig.PigServer$Graph.access$000(PigServer.java:1528)
+	at org.apache.pig.PigServer.parseAndBuild(PigServer.java:461)
+	at org.apache.pig.PigServer.executeBatch(PigServer.java:486)
+	at org.apache.pig.PigServer.executeBatch(PigServer.java:472)
+	at org.apache.pig.tools.grunt.GruntParser.executeBatch(GruntParser.java:171)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:234)
+	at org.apache.pig.tools.grunt.GruntParser.parseStopOnError(GruntParser.java:205)
+	at org.apache.pig.tools.grunt.Grunt.exec(Grunt.java:81)
+	at org.apache.pig.Main.run(Main.java:500)
+	at org.apache.pig.PigRunner.run(PigRunner.java:49)
+	at com.example.WordCountPig.main(WordCountPig.java:33)
+Caused by: Failed to parse: <file C:\Users\U-19\Desktop\FILE DI INSTALLAZIONE\ApacheSpark\ScriptPigLatin.pig, line 1, column 30>  Unexpected character 'D'
+	at org.apache.pig.parser.QueryParserDriver.parse(QueryParserDriver.java:246)
+	at org.apache.pig.parser.QueryParserDriver.parse(QueryParserDriver.java:182)
+	at org.apache.pig.PigServer$Graph.parseQuery(PigServer.java:1820)
+	... 11 more
+================================================================================
